@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,701;1,701&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main">
+        
+        <h1 class="montserrat">Our Pricing</h1>
+
+    
+
+        <div class="div-1 montserrat">
+            <span>Annually</span>
+            <div class="switch-container">
+                <input type="checkbox" name="switch" id="switch" checked>
+                <label for="switch">
+                    <div class="switch-circle"></div>
+                </label>
+              </div>
+            <span>Monthly</span>
+        </div>
+
+        <div class="Container montserrat">
+            <div class="Card Card1">
+                <h4>Basic</h4>
+                <div class="price-div">
+                    <span class="dollar">$</span><span class="price price1"> 19.99</span>
+                </div>
+                <p>500 GB Storage</p>
+                <p>2 Users Allowed</p>
+                <p>Send up to 3 GB</p>
+                <button class="btn">LEARN MORE</button>
+            </div>
+            <div class="Card Card2">
+                <h4>Professional</h4>
+                <div class="price-div">
+                    <span class="dollar">$</span><span class="price price2"> 24.99</span>
+                </div>
+                <p>1 TB Storage</p>
+                <p>5 Users Allowed</p>
+                <p>Send up to 10 GB</p>
+                <button class="btn" id="btn2">LEARN MORE</button>
+            </div>
+            <div class="Card Card1">
+                <h4>Master</h4>
+                <div class="price-div">
+                    <span class="dollar">$</span><span class="price price3"> 39.99</span> 
+                </div>
+                <p>2 TB Storage</p>
+                <p>10 Users Allowed</p>
+                <p>Send up to 20 GB</p>
+                <button class="btn">LEARN MORE</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        const toggle = document.querySelector("#switch")
+        const price1 = document.querySelector(".price1")
+        const price2 = document.querySelector(".price2")
+        const price3 = document.querySelector(".price3")
+
+
+        toggle.addEventListener("click",()=>{
+            if(toggle.checked){
+              price1.textContent = " 19.99"
+              price2.textContent = " 24.99"
+              price3.textContent = " 39.99"
+            }
+            else{
+              price1.textContent = " 199.99"
+              price2.textContent = " 249.99"
+              price3.textContent = " 399.99"
+            }
+        })
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

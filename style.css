@@ -1,0 +1,170 @@
+*{
+    margin:0
+}
+
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height:100vh;
+    gap:20px;
+    background-color:hsl(240, 78%, 98%)
+}
+
+.div-1{
+    display: flex;
+    align-items: center;
+    gap:15px
+}
+
+.Container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 40px; */
+}
+
+
+.Card{
+     /* border:2px solid red; */
+     padding: 45px;
+     text-align: center;
+     border-radius: 10px;
+     margin-top: 55px;
+}
+
+.Card p{
+    padding: 16px;
+    margin: 0;
+    border-bottom: 1px solid rgb(164, 150, 150);
+}
+
+.Card1{
+    background-color: white !important;
+}
+
+.Card2{
+    background: linear-gradient(90deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    color: white;
+    transform: scale(1.08);
+
+   
+}
+
+
+
+.Card2 p{
+    border-bottom: 1px solid white;
+}
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 701;
+  font-style: normal;
+}
+
+
+.price{
+    font-size: 70px;
+}
+
+.dollar{
+    font-size: 45px;
+}
+
+
+.btn{
+    width: 100%;
+    background: linear-gradient(90deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    color:white !important;
+    font-weight: 100 !important;
+    letter-spacing: 1px !important;
+    border: none;
+    padding: 13px !important;
+    font-size: 10px !important;
+    margin-top: 25px;
+}
+
+.btn:hover{
+    background: white;
+    color:hsl(236, 57%, 68%)  !important;
+    outline: 1px solid hsl(236, 57%, 68%);
+}
+
+#btn2{
+    background: white;
+    color:hsl(236, 57%, 68%) !important;
+}
+#btn2:hover{
+    background: hsl(236, 57%, 68%);
+    color:white  !important;
+    outline: 1px solid white;
+}
+
+
+
+
+
+.price-div{
+    display: flex;
+    align-items: center;
+    gap:7px;
+}
+
+
+
+
+
+
+/* checkbox */
+
+#switch{
+    /* display: none; */
+    position: absolute;
+    opacity: 0;
+ }
+
+ .switch-container label {
+      /* border:1px solid #C2C2C2; */
+      display: inline-block;
+      width: 56px;
+      /* height:14px; */
+      border-radius: 30px;
+      cursor: pointer;
+      display: flex;
+      padding: 2.5px;
+      /* background-color:#E0E0E0 ; */
+      background-color: #5128C6;
+      /* position: relative; */
+ }
+
+ .switch-container label:hover{
+    border-color: #5128C6;
+ }
+
+ #switch:checked + label .switch-circle{
+    margin-left: 25px;
+    
+ }
+#switch:checked + label{
+    border-color: #5128C6;
+   background-color: #5128C6;
+}
+
+#switch:focus + label{
+    border-color: #5128C6;
+    outline: 2px solid #CFBFFF;
+   
+}
+
+.switch-circle{
+    width:27px ;
+    height: 27px;
+    background-color: white;
+    
+    border-radius: 50%;
+    transition: margin 0.2s ease-in;
+}
